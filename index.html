@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字游戏</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1 class="game-title">文字游戏</h1>
+        </header>
+
+        <div class="status-bar" id="status-bar">
+            <div class="status-item">
+                <span class="status-label">第</span>
+                <span class="status-value" id="day">1</span>
+                <span class="status-label">天</span>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">💰</span>
+                <span class="status-value" id="money">20</span>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">⚡</span>
+                <span class="status-value" id="energy">100</span>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">⭐</span>
+                <span class="status-value" id="reputation">0</span>
+            </div>
+        </div>
+
+        <main class="game-main">
+            <section class="story-area" id="story-area">
+                <div class="story-text" id="story-text">
+                    欢迎来到文字游戏世界！请选择你的行动开始冒险。
+                </div>
+            </section>
+
+            <section class="action-area" id="action-area">
+                <div class="action-buttons" id="action-buttons">
+                    <!-- 按钮由 ui.js 动态生成 -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="game-footer">
+            <div class="menu-buttons" id="menu-buttons">
+                <button class="menu-btn" id="btn-save" title="保存游戏">💾 保存</button>
+                <button class="menu-btn" id="btn-load" title="读取游戏">📂 读取</button>
+                <button class="menu-btn" id="btn-reset" title="重新开始">🔄 重置</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/state.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/characters.js"></script>
+    <script src="js/inventory.js"></script>
+    <script src="js/save.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
